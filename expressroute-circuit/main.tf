@@ -3,7 +3,7 @@ resource "azurerm_express_route_circuit" "express_route_circuit" {
   resource_group_name   = var.resource_group_name
   location              = var.express_route_circuit.location
   service_provider_name = var.service_provider_name
-  peering_location      = var.peering_location_name
+  peering_location      = var.peering_location
   bandwidth_in_mbps     = var.bandwidth_in_mbps
   allow_classic_operations = var.allow_classic_operations
   express_route_port_id = var.express_route_port_id
